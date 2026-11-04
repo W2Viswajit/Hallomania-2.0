@@ -2038,7 +2038,7 @@
       <div class="wrap">
         <h2 class="h">CHOOSE YOUR NIGHTMARE</h2>
         <p class="lead">Three events, ₹60,000 in prizes. Pick an event, check the fee, prize and rules, then register
-          through its Google Form by 4 November.</p>
+          through its Google Form by 5 November.</p>
         <div class="grid" id="grid"></div>
       </div>
     </section>
@@ -2127,19 +2127,19 @@
       faq: [
         ["Who can participate?", "Participation is open to all college students. You must carry a valid college ID card for verification."],
         ["What is the registration fee?", "The registration fee is ₹250 per team for every event. All fees must be paid in advance."],
-        ["What is the last date to register?", "Registrations close on 4 November 2026."],
+        ["What is the last date to register?", "Registrations close on 5 November 2026."],
         ["Can I participate in multiple events?", "Yes, as long as the timings don't clash. Digital Exorcism (11:00 AM), Phantom's Prophecy (12:15 PM) and The Killer Circuit (2:15 PM) run one after another. Register separately for each event."],
         ["What are the team sizes?", "Every event is for teams of 2–4 members. Team composition can't be changed once the event begins."],
         ["Where will the event be held?", "On the NMIT campus, Bengaluru. Digital Exorcism runs in the labs, Phantom's Prophecy in the labs and classrooms, and The Killer Circuit in classrooms."],
         ["How do I register?", "Open an event, click Register, and complete its Google Form. Pay the registration fee in advance as instructed on the form. Payment is not handled on this website."],
-        ["Is there on-spot registration?", "Registration must be completed through the event's Google Form, with the fee paid in advance, by 4 November 2026. For anything else, contact the organizing team."],
+        ["Is there on-spot registration?", "Registration must be completed through the event's Google Form, with the fee paid in advance, by 5 November 2026. For anything else, contact the organizing team."],
         ["What should participants bring?", "A valid college ID card. Arrive at your venue at least 15 minutes before your event starts. Check each event's details for anything extra, such as a pen."],
         ["Can we use phones or AI tools?", "Only when the rules of that event explicitly allow it. Otherwise mobile phones, AI tools, external resources and outside help are not permitted."],
         ["How are winners decided?", "Scoring, penalties, bonus points and tie-breakers follow each event's own rules, and judges verify the results."],
         ["How will prizes be distributed?", "The top three teams in each event win cash prizes: 1st ₹10,000, 2nd ₹7,000, 3rd ₹3,000. The total prize pool is ₹60,000."],
         ["Who do I contact for help?", "Contact the organizing team or email AUGMENTIX@nmit.ac.in."]]
     };
-    const GEN = ["Register through this event's Google Form and pay the fee in advance. Registrations close on 4 November 2026.", "Report to the venue at least 15 minutes before the event starts.", "Team composition can't be changed once the event begins.", "Mobile phones, AI tools and outside help are allowed only where the event rules say so.", "Respect fellow participants, organizers, volunteers, judges and college property. No running in restricted areas, and report any safety concern immediately.", "By registering you agree to follow all event rules and instructions from the organizing committee."];
+    const GEN = ["Register through this event's Google Form and pay the fee in advance. Registrations close on 5 November 2026.", "Report to the venue at least 15 minutes before the event starts.", "Team composition can't be changed once the event begins.", "Mobile phones, AI tools and outside help are allowed only where the event rules say so.", "Respect fellow participants, organizers, volunteers, judges and college property. No running in restricted areas, and report any safety concern immediately.", "By registering you agree to follow all event rules and instructions from the organizing committee."];
     const base = { date: CONFIG.dateLabel, time: "[TIME]", venue: CONFIG.venueLabel, desc: "", eligibility: "Open to all college students. A valid college ID card is required for verification.", how: "", rules: [], bring: ["Valid college ID card"], notes: GEN, url: FORM };
     // status: "open" | "closing" | "closed". fee.amount 0 = FREE. fee.per: "Person" | "Team".
     const EVENTS = [
@@ -2163,7 +2163,7 @@
       },
       {
         ...base, icon: "circuit", cat: "Tech · Logic Mystery", name: "The Killer Circuit", team: "Team of 2–4", time: "2:15 – 3:15 PM", venue: "Classrooms",
-        fee: { amount: 250, per: "Team" }, prize: { total: 20000, tiers: [10000, 7000, 3000] }, status: "closing",
+        fee: { amount: 250, per: "Team" }, prize: { total: 20000, tiers: [10000, 7000, 3000] }, status: "open",
         desc: "A crime scene turned logic puzzle. Think like a detective and an engineer to expose the culprit.",
         how: "Teams get a murder mystery story, the rules and a set of evidence. Round 1: examine the evidence and suspect clues to work out who the suspects are. Round 2: analyse the logic gates and find the one piece of evidence that contradicts the rest. Round 3: connect the clues to decode the motive behind the crime. Final Round: connect the whole circuit, expose the culprit and justify your answer to the judges.",
         rules: ["Only AND, OR, NOT and XOR gates are used to solve the clues.", "Rounds are played in order. Each round unlocks the next piece of evidence.", "The final circuit combines Opportunity, Contradiction and Motive. An output of 1 names the culprit.", "Your accusation must be justified to the judges with the evidence that led to it.", "Teams are scored on the evidence they find and how well they argue their conclusion."],
